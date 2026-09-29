@@ -1,5 +1,4 @@
 # HTML-Portfolio
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +8,16 @@
     <meta name="description" content="Marley Savela's personal portfolio showcasing her education, projects, and experience in information science and sales.">
     <meta name="author" content="Marley Savela">
 
+    <meta property="og:title" content="Marley Savela | Portfolio">
+    <meta property="og:description" content="Information Science and Sales portfolio.">
+    <meta name="theme-color" content="#18453b">
+
     <title>Marley Savela | Portfolio</title>
 </head>
 
 <body>
+
+    <a href="#main">Skip to main content</a>
 
     <header>
         <p>Marley Savela</p>
@@ -28,7 +33,7 @@
         </ul>
     </nav>
 
-    <main>
+    <main id="main">
 
         <section id="intro" aria-labelledby="intro-heading">
             <h1 id="intro-heading">Hi, I'm Marley!</h1>
@@ -47,10 +52,10 @@
 
             <figure>
                 <img
-                    src="images/michigan_state_university.png"
-                    alt="Michigan State University campus"
+                    src="images/headshot.jpg"
+                    alt="My professional headshot"
                 >
-                <figcaption>Michigan State University</figcaption>
+                <figcaption>Marley Savela, Information Science student</figcaption>
             </figure>
         </section>
 
@@ -86,10 +91,14 @@
             <ul>
                 <li>Strong communication and relationship-building skills</li>
                 <li>Attention to detail and organization</li>
-                <li>Experience with Salesforce and CRM data</li>
+                <li>Experience with Salesforce and <abbr title="Customer Relationship Management">CRM</abbr> data</li>
                 <li>Curiosity about technology and business</li>
                 <li>A willingness to learn and take on new challenges</li>
             </ul>
+
+            <aside aria-label="Fun fact">
+                <p>Add a fun fact or personal note here.</p>
+            </aside>
         </section>
 
 
@@ -106,6 +115,11 @@
                     at how technology and accurate information can help sales
                     teams stay organized and make better-informed decisions.
                 </p>
+
+                <details>
+                    <summary>What I learned</summary>
+                    <p>Add a specific challenge you faced and what you took away from it.</p>
+                </details>
 
                 <h4>Skills Developed</h4>
 
@@ -128,6 +142,10 @@
                     semantic HTML, accessibility, website structure, and
                     version control while creating a space to showcase my
                     work.
+                </p>
+
+                <p>
+                    <a href="https://github.com/YOUR-USERNAME/YOUR-REPO">View the source on GitHub</a>
                 </p>
 
                 <h4>What I Learned</h4>
@@ -179,9 +197,7 @@
             <address>
                 <p>
                     Email:
-                    <a href="mailto:marleysavela@gmail.com">
-                        YOUR-EMAIL@example.com
-                    </a>
+                    <a href="mailto:marleysavela@gmail.com">marleysavela@gmail.com</a>
                 </p>
 
                 <p>
@@ -202,4 +218,3 @@
 
 </body>
 </html>
-```
