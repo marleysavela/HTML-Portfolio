@@ -13,16 +13,15 @@
   <meta property="og:title" content="Marley Savela | Sales Operations &amp; Information Science">
   <meta property="og:description" content="Turning messy sales data into clear decisions. Projects, story, and contact info.">
   <meta property="og:image" content="images/headshot.jpg">
-  <link rel="stylesheet" href="styles.css"
+  <!-- External stylesheet: keep styles.css beside index.html. -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top">
 
-  <a href="#main">Skip to main content</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header>
     <a href="#top" aria-label="Marley Savela, back to top"><strong>Marley Savela</strong></a>
-    <p>Information Science student and Sales Operations intern</p>
-
     <nav aria-label="Main navigation">
       <ul>
         <li><a href="#hero">Home</a></li>
@@ -31,32 +30,26 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <p>Information Science / Sales Operations / Michigan State</p>
   </header>
   <main id="main">
 
     <!-- HERO -->
     <section id="hero" aria-labelledby="hero-heading">
       <p class="eyebrow">A portfolio by Marley Savela / 2026</p>
-
-<h1 id="hero-heading">
-  Good data.<br>
-  <em>Better connections.</em>
-</h1>
-      <p>I'm studying Information Science at Michigan State University with a minor in Sales Leadership, and I work at the point where the two meet: the data that helps a sales team sell. This summer I've been the Salesforce administrator for a team of more than 50 sales reps.</p>
+      <h1 id="hero-heading">Good data.<br><em>Better connections.</em></h1>
+      <p class="hero-copy"><strong>Hi, I'm Marley. I turn messy sales data into clear decisions.</strong> I'm studying Information Science at Michigan State University with a minor in Sales Leadership, and I work at the point where the two meet: the data that helps a sales team sell. This summer I've been the Salesforce administrator for a team of more than 50 sales reps.</p>
       <p>
-        <a class="button" href="#projects">
-          Explore my work &nbsp; &#8599;
-        </a>
-
-        <a class="secondary-link" href="#contact">
-           Let's connect
-        </a>
+        <a class="button" href="#projects">Explore my work &nbsp; &#8599;</a>
+        <a class="secondary-link" href="#contact">Let's connect</a>
       </p>
+      <div class="specialties" role="group" aria-label="Areas of focus"><span>CRM systems</span><span>Consultative selling</span><span>Client relationships</span></div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">About me</h2>
+      <p class="section-label">01 / The person behind the work</p>
+      <h2 id="about-heading">Curious mind.<br>People-first approach.</h2>
 
       <figure>
         <img src="images/headshot.jpg" alt="Headshot of Marley Savela" width="300" height="300">
@@ -113,7 +106,8 @@
 
  <!-- PROJECTS -->
     <section id="projects" aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Projects</h2>
+      <p class="section-label">02 / Selected work</p>
+      <h2 id="projects-heading">Small details.<br>Meaningful impact.</h2>
       <p>Three pieces of work from my internship at <a href="https://www.ever.ag" target="_blank" rel="noopener noreferrer">Ever.Ag</a>, and what each one taught me. Details are shared at a high level to respect company information.</p>
 
       <article aria-labelledby="project-1-title">
@@ -181,7 +175,8 @@
 
  <!-- CONTACT -->
     <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contact</h2>
+      <p class="section-label">03 / Get in touch</p>
+      <h2 id="contact-heading">Let's make<br>something happen.</h2>
       <p>I'm looking for software sales positions starting after I graduate in May 2027, and I'm always glad to talk about how data helps teams sell. Send a note and I'll reply within a couple of days.</p>
 
       <address>
@@ -189,7 +184,7 @@
         LinkedIn: <a href="https://www.linkedin.com/in/marleysavela" target="_blank" rel="noopener noreferrer">linkedin.com/in/marleysavela</a>
       </address>
 
-      <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" aria-label="Contact form">
+      <form name="contact" action="/thank-you.html" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" aria-label="Contact form">
 
         <input type="hidden" name="form-name" value="contact">
         <input type="hidden" name="bot-field">
@@ -229,7 +224,7 @@
   </aside>
 
   <footer>
-    <p>&copy; 2026 Marley Savela. Built with semantic HTML.</p>
+    <p>&copy; 2026 Marley Savela. Built with semantic HTML and CSS.</p>
     <nav aria-label="Footer navigation">
       <ul>
         <li><a href="#top">Back to top</a></li>
