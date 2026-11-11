@@ -18,6 +18,17 @@
 </head>
 <body id="top">
 
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<button id="theme-toggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="Switch to dark mode"
+        aria-pressed="false">
+  <span id="theme-icon" aria-hidden="true">☾</span>
+  <span id="theme-label">Dark mode</span>
+</button>
+
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header>
@@ -109,6 +120,30 @@
       <p class="section-label">02 / Selected work</p>
       <h2 id="projects-heading">Small details.<br>Meaningful impact.</h2>
       <p>Three pieces of work from my internship at <a href="https://www.ever.ag" target="_blank" rel="noopener noreferrer">Ever.Ag</a>, and what each one taught me. Details are shared at a high level to respect company information.</p>
+
+
+<div class="project-filters"
+     role="group"
+     aria-label="Filter projects">
+  <button type="button" class="filter-btn active"
+          data-filter="all" aria-pressed="true">
+    All work
+  </button>
+  <button type="button" class="filter-btn"
+          data-filter="crm" aria-pressed="false">
+    CRM Operations
+  </button>
+  <button type="button" class="filter-btn"
+          data-filter="analytics" aria-pressed="false">
+    Analytics
+  </button>
+</div>
+
+<p id="filter-status"
+   class="sr-only"
+   role="status"
+   aria-live="polite"></p>
+
 
       <article aria-labelledby="project-1-title" data-category="crm">
         <h3 id="project-1-title">Rescuing orphaned accounts</h3>
